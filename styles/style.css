@@ -4,8 +4,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    body {
+        @apply box-border;
+    }
+}
+
 @layer components {
     .logoBox{
-        @apply font-bold text-[18px] inline-flex gap-x-1 items-center h-[56px] leading-5  p-3
+        @apply font-bold text-[18px] inline-flex gap-x-1 items-center 
+            h-[56px] leading-5 p-3;
+    }
+
+    .linkItem{
+        @apply p-2 text-[#1A202C] hover:underline underline-offset-[3px];
+    }
+
+    .dropdownIcon{
+        @apply p-3 mr-3 border-2 rounded-md cursor-pointer hover:bg-[#EDF2F7];
+    }
+
+    .dropdown{
+        @apply absolute top-12 right-1 bg-white border rounded-md 
+        flex flex-col w-[200px];
+    }
+
+    .dropdownLink{
+        @apply hover:underline underline-offset-[3px] hover:bg-[#EDF2F7] 
+        pl-4 pb-3 pt-1 mb-1;
     }
 }

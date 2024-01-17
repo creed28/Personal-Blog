@@ -1,19 +1,8 @@
-import NextLink from 'next/link';
+'use client'
+
 import Link from 'next/link';
 import Image from 'next/image';
-
-const LinkItem = ({ href, path, children}) => {
-  const active = path === href;
-  
-  return(
-    <NextLink href={href}>
-      <Link href={href} className={`p-2 ${active ? 'bg-[glassTeal] text-[#202023]' 
-        : 'bg-[undefined] text-[gray]'}`}>          
-        {children}
-      </Link>
-    </NextLink>
-  )
-}
+import LinkItem from './LinkItem';
 
 const Navbar = () => {
   return (
@@ -33,9 +22,9 @@ const Navbar = () => {
           </h1>
         </Link>
         <ul>
-          <li><LinkItem href='/about' path={'/'}>
-            About
-          </LinkItem></li>
+          <li>
+            <LinkItem href='/about' path={'/'} content='About' />
+          </li>
         </ul>
       </div>
     </nav>

@@ -1,9 +1,12 @@
-const Home = () => {
-  return (
-    <main>
-      Hello
-    </main>
-  )
-}
+'use client'
 
-export default Home
+const Home = () => {
+    return (
+      <section>
+        Home
+      </section>
+    )
+  }
+  
+  export default Home
+  

@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'Rounded1c': ['"M PLUS Rounded 1c"', 'sans-serif']
+      }
     },
   },
   plugins: [],

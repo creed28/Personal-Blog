@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Logo from './Logo';
 import LinkItem from './LinkItem';
+import ThemeToggleButton from './ThemeToggleButton';
 import { usePathname } from 'next/navigation';
 import { FaBars } from "react-icons/fa";
 import { useState } from 'react';
@@ -21,7 +22,7 @@ const Navbar = () => {
       <div className='flex gap-x-48'>
         <div className='flex p-2 max-w-screen-md mx-auto flex-wrap items-center 
           gap-x-5 justify-between'>
-          <Link href='/' className='flex items-center'>
+          <Link href='/' className='flex items-center shrink-0'>
             <Logo />
           </Link>
           <ul className='items-center flex-grow gap-x-2 hidden w-full 
@@ -51,37 +52,42 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="relative mt-4 md:hidden">
-          <div
-            className={`dropdownIcon ${isDropdownOpen ? 'bg-[#EDF2F7]' : ''}`}
-            onClick={handleDropdownToggle}
-          >
-            <FaBars size={14} />
+        <div className='flex gap-x-2 mr-5 md:m-0'>
+          <div className='flex items-center shrink-0'>
+            <ThemeToggleButton />
           </div>
-          {isDropdownOpen && (
-            <div className="dropdown">
-              <Link 
-                href='/posts' 
-                className='dropdownLink'>
-                  Posts
-              </Link>
-              <Link 
-                href='/about' 
-                className='dropdownLink'>
-                  About
-              </Link>
-              <Link 
-                href='/contact' 
-                className='dropdownLink'>
-                  Contact Me
-              </Link>
-              <Link 
-                href='https://github.com/creed28/Personal-Blog' 
-                className='dropdownLink'>
-                  View Source
-              </Link>
+          <div className="relative mt-4 md:hidden">
+            <div
+              className={`dropdownIcon ${isDropdownOpen ? 'bg-[#EDF2F7]' : ''}`}
+              onClick={handleDropdownToggle}
+            >
+              <FaBars size={14} />
             </div>
-          )}
+            {isDropdownOpen && (
+              <div className="dropdown">
+                <Link 
+                  href='/posts' 
+                  className='dropdownLink mt-2'>
+                    Posts
+                </Link>
+                <Link 
+                  href='/about' 
+                  className='dropdownLink'>
+                    About
+                </Link>
+                <Link 
+                  href='/contact' 
+                  className='dropdownLink'>
+                    Contact Me
+                </Link>
+                <Link 
+                  href='https://github.com/creed28/Personal-Blog' 
+                  className='dropdownLink mb-2'>
+                    View Source
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </nav>

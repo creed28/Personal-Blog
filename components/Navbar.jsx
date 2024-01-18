@@ -49,7 +49,8 @@ const Navbar = () => {
             <li>
               <LinkItem 
                 href='https://github.com/creed28/Personal-Blog' 
-                content='View Source' />
+                content='View Source'
+                target="_blank" />
             </li>
           </ul>
         </div>
@@ -83,7 +84,8 @@ const Navbar = () => {
                 </Link>
                 <Link 
                   href='https://github.com/creed28/Personal-Blog' 
-                  className='dropdownLink mb-2'>
+                  className='dropdownLink mb-2'
+                  target="_blank">
                     View Source
                 </Link>
               </div>

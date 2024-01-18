@@ -2,12 +2,13 @@
 
 import Link from 'next/link';
 
-const LinkItem = ({ href, path, content}) => {
+const LinkItem = ({ href, path, content, target=""}) => {
   const active = path === href;
 
   return(
     <Link 
       href={href} 
+      target={target}
       className={`linkItem
       ${active ? 'bg-[#88CCCA]' 
       : 'bg-[undefined]'}`}> 

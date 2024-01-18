@@ -14,7 +14,7 @@ const RootLayout = ({ children }) => {
       </head>
       <body className='bg-[#F0E7DB]'>
         <Navbar />
-        <main className='max-w-screen-md mx-auto pt-14'>
+        <main className='max-w-screen-md mx-auto pt-24'>
           {children}
         </main>
       </body>

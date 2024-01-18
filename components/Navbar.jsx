@@ -17,8 +17,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='bg-[#F4EDE4] w-[100%] blur-[10%] z-[1] max-h-[56px] items-center 
-      flex justify-center'>
+    <nav className='bg-[#F4EDE4] w-full z-[2] max-h-[56px] 
+      items-center flex justify-center fixed bg-opacity-40 backdrop-filter 
+      backdrop-blur-md'>
       <div className='flex gap-x-48'>
         <div className='flex p-2 max-w-screen-md mx-auto flex-wrap items-center 
           gap-x-5 justify-between'>

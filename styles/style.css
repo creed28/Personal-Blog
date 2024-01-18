@@ -46,4 +46,9 @@
     .bioParagraph{
         @apply font-bold mr-[1em];
     }
+
+    .socialLink{
+        @apply text-[#2C7A7B] flex gap-x-1 items-center font-bold hover:bg-[#E6FFFA] 
+        p-2 px-3 rounded-md;
+    }
 }

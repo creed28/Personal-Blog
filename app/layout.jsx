@@ -9,6 +9,9 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/assets/favicon.png" sizes="any" />
+      </head>
       <body className='bg-[#F0E7DB]'>
         <Navbar />
         <main className='max-w-screen-md mx-auto pt-14'>

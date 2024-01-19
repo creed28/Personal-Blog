@@ -1,5 +1,6 @@
 import '../styles/style.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export const metadata = {
   title: 'Hristo Zagorliev - Homepage',
@@ -17,6 +18,7 @@ const RootLayout = ({ children }) => {
         <main className='max-w-screen-md mx-auto pt-24'>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )

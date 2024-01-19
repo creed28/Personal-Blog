@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className='bg-[#F4EDE4] w-full z-[2] max-h-[56px] 
       items-center flex justify-center fixed bg-opacity-40 backdrop-filter 
       backdrop-blur-md'>
-      <div className='flex gap-x-48'>
+      <div className='flex gap-x-48 md:gap-x-32'>
         <div className='flex p-2 max-w-screen-md mx-auto flex-wrap items-center 
           gap-x-5 justify-between'>
           <Link href='/' className='flex items-center shrink-0'>

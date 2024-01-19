@@ -24,7 +24,7 @@ const About = () => {
             <h2 className="text-[1.875rem] font-bold font-Rounded1c">
               Hristo Zagorliev
             </h2>
-            <p className="text-[15px] md:text-[1rem]">
+            <p className="text-[14px] md:text-[1rem]">
               Digital Craftsman ( Developer / Web Designer / Bookworm )
             </p>
           </div>

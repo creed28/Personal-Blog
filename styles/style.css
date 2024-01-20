@@ -17,21 +17,24 @@
     }
 
     .linkItem{
-        @apply p-2 text-[#1A202C] hover:underline underline-offset-[3px];
+        @apply p-2 text-[#1A202C] hover:underline underline-offset-[3px] 
+        dark:text-[#EDEDED];
     }
 
     .dropdownIcon{
-        @apply p-3 mr-3 border-2 rounded-md cursor-pointer hover:bg-[#EDF2F7];
+        @apply p-3 mr-3 border-2 rounded-md cursor-pointer hover:bg-[#EDF2F7]
+        dark:text-[#C1C1C1] dark:hover:bg-[#323235] dark:border-[#525255];
     }
 
     .dropdown{
         @apply absolute top-12 right-1 bg-white border rounded-md 
-        flex flex-col w-[200px];
+        flex flex-col w-[200px] dark:bg-[#2D3748];
     }
 
     .dropdownLink{
         @apply hover:underline underline-offset-[3px] hover:bg-[#EDF2F7] 
-        pl-4 pb-3 pt-1 mb-1;
+        pl-4 pb-3 pt-1 mb-1 dark:hover:bg-[#394353] dark:text-[#EFF0F2]
+      dark:border-[#525255];
     }
 
     .articleHeading{
@@ -49,6 +52,6 @@
 
     .socialLink{
         @apply text-[#2C7A7B] flex gap-x-1 items-center font-bold hover:bg-[#E6FFFA] 
-        p-2 px-3 rounded-md;
+        p-2 px-3 rounded-md dark:text-[#7CDBCF] dark:hover:bg-[#2C3839];
     }
 }

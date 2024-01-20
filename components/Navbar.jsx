@@ -14,12 +14,12 @@ const Navbar = () => {
 
   const handleDropdownToggle = () => {
     setDropdownOpen(!isDropdownOpen);
-  };
+  }
 
   return (
     <nav className='bg-[#F4EDE4] w-full z-[2] max-h-[56px] 
-      items-center flex justify-center fixed bg-opacity-40 backdrop-filter 
-      backdrop-blur-md'>
+      items-center flex justify-center fixed dark:bg-[#202023] 
+      dark:bg-opacity-40 bg-opacity-40 backdrop-filter backdrop-blur-md'>
       <div className='flex gap-x-48 md:gap-x-32'>
         <div className='flex p-2 max-w-screen-md mx-auto flex-wrap items-center 
           gap-x-5 justify-between'>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <Logo />
           </Link>
           <ul className='items-center flex-grow gap-x-2 hidden w-full 
-            md:flex md:w-auto'>
+            md:flex md:w-auto dark:text-[#EDEDED]'>
             <li>
               <LinkItem 
                 href='/posts' 
@@ -60,7 +60,9 @@ const Navbar = () => {
           </div>
           <div className="relative mt-4 md:hidden">
             <div
-              className={`dropdownIcon ${isDropdownOpen ? 'bg-[#EDF2F7]' : ''}`}
+              className={`dropdownIcon 
+              ${isDropdownOpen ? 'bg-[#EDF2F7] dark:bg-[#323235]' 
+              : ''}`}
               onClick={handleDropdownToggle}
             >
               <FaBars size={14} />

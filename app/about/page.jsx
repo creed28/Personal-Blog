@@ -15,11 +15,11 @@ const About = () => {
     return (
       <article>
         <div className="rounded-lg bg-[#F5F0E8] p-3 text-center mb-6 mx-6 
-          md:mx-0">
+          md:mx-0 dark:bg-[#313134] dark:text-[#E6E6E6]">
           Hello, I&apos;m a Computer Science student based in Bulgaria!
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-2 md:gap-0">
+        <div className="flex flex-col md:flex-row items-center gap-2 md:gap-0 dark:text-[#EEEEEE]">
           <div className="flex-grow">
             <h2 className="text-[1.875rem] font-bold font-Rounded1c">
               Hristo Zagorliev
@@ -40,7 +40,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="mt-[30px] mx-6 md:mx-0">
+        <div className="mt-[30px] mx-6 md:mx-0 dark:text-[#EEEEEE]">
           <AnimatedSection delay={0.1}>
             <h3 className="articleHeading">
                 Why I made this
@@ -83,7 +83,8 @@ const About = () => {
               <Link href={'/'}>
                 <button className="flex bg-[#319795] hover:bg-[#2C7A7B] 
                   items-center p-2 px-3 font-semibold rounded-md gap-2 my-4 
-                  text-center text-white">
+                  text-center text-white dark:bg-[#81e6d9] 
+                  dark:hover:bg-[#4FD1C5] dark:text-[#244148]">
                   Read more
                   <IoIosArrowForward className="mt-1" />
                 </button>

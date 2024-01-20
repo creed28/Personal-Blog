@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => {
       <head>
         <link rel="icon" href="/assets/favicon.png" sizes="any" />
       </head>
-      <body className='bg-[#F0E7DB]'>
+      <body className='bg-[#F0E7DB] dark:bg-[#202023]'>
         <Navbar />
         <main className='max-w-screen-md mx-auto pt-24'>
           {children}

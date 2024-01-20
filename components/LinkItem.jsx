@@ -10,7 +10,7 @@ const LinkItem = ({ href, path, content, target=""}) => {
       href={href} 
       target={target}
       className={`linkItem
-      ${active ? 'bg-[#88CCCA]' 
+      ${active ? 'bg-[#88CCCA] dark:text-[#2F383B]' 
       : 'bg-[undefined]'}`}> 
         {content}       
     </Link>

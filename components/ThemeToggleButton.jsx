@@ -1,30 +1,27 @@
-'use client';
+'use client'
 
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 
 const ThemeToggleButton = () => {
-  const [isToggle, setIsToggle] = useState(null);
+  const { setTheme, resolvedTheme } = useTheme();
 
   const toggleTheme = () => {
-    setIsToggle(!isToggle);
-  };
-
-  useEffect(() => {
-    if(isToggle){
-      document.documentElement.classList.add('dark');
-    } else{
-      document.documentElement.classList.remove('dark');
+    if (resolvedTheme === 'dark') {
+     setTheme('light');
     }
 
-  }, [isToggle]);
+    if (resolvedTheme === 'light') {
+     setTheme('dark');
+    }
+  }
 
   return (
     <AnimatePresence mode='wait' initial={false}>
       <motion.div
         style={{ display: 'inline-block' }}
-        key={isToggle}
+        key={resolvedTheme}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 20, opacity: 0 }}
@@ -32,14 +29,14 @@ const ThemeToggleButton = () => {
       >
         <button
           className={`flex items-center ${
-            isToggle
+            resolvedTheme === 'dark'
               ? 'bg-[#fbd38d] hover:bg-[#F6AD55]'
               : 'bg-[#805ad5] hover:bg-[#6B46C1]'
           } p-[10px] rounded-[0.375rem]`}
           onClick={toggleTheme}
         >
           <Image
-            src={`/assets/images/${isToggle ? 'sun' : 'moon'}-icon.png`}
+            src={`/assets/images/${resolvedTheme === 'dark' ? 'sun' : 'moon'}-icon.png`}
             alt="Toggle theme"
             width={20}
             height={20}

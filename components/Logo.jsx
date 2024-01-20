@@ -1,16 +1,12 @@
 'use client'
 
-import Image from 'next/image';
+import Coffee from '../public/assets/icons/coffee';
 
 const Logo = () => {
-  return (
+
+  return(
     <h1 className='logoBox tracking-tighter'>
-      <Image
-        src="/assets/images/coffee-logo.png" 
-        alt='Coffee logo' 
-        width={27} 
-        height={27}               
-      />
+      <Coffee />
       <p className='font-Rounded1c text-[#1A202C] dark:text-[#EDEDED]'>
         Hristo Zagorliev
       </p>

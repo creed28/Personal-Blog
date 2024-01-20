@@ -2,14 +2,23 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const ThemeToggleButton = () => {
-  const [isToggle, setIsToggle] = useState(false);
+  const [isToggle, setIsToggle] = useState(null);
 
   const toggleTheme = () => {
     setIsToggle(!isToggle);
   };
+
+  useEffect(() => {
+    if(isToggle){
+      document.documentElement.classList.add('dark');
+    } else{
+      document.documentElement.classList.remove('dark');
+    }
+
+  }, [isToggle]);
 
   return (
     <AnimatePresence mode='wait' initial={false}>

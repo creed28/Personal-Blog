@@ -34,7 +34,7 @@ const About = () => {
               alt="Profile Image" 
               width={96}
               height={100}
-              loading="lazy"
+              loading="eager"
               className="border-[#fff] border-2 border-solid max-w-[100px] 
                 inline-block rounded-full"
             />

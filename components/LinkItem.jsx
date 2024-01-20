@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-const LinkItem = ({ href, path, content, target=""}) => {
+const LinkItem = ({ href, path, content, target="" }) => {
   const active = path === href;
 
   return(

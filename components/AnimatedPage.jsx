@@ -16,7 +16,7 @@ const AnimatedPage = ({ children }) => {
       animate='enter' 
       exit='exit' 
       variants={variants} 
-      transition={{duration: 0.4, type: 'easeInOut'}}>
+      transition={{duration: 0.4, type: 'easeInOut', delay: 0.2}}>
         {children}
     </motion.article>
   )

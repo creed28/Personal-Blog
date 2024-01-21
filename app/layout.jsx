@@ -4,7 +4,10 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Hristo Zagorliev - Homepage',
+  title: {
+    default: 'Hristo Zagorliev - Homepage',
+    template: '%s - Hristo Zagorliev'
+  },
   description: "Hristo Zagorliev's personal blog",
 }
 

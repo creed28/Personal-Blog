@@ -1,5 +1,3 @@
-'use client'
-
 import Image from "next/image";
 import AnimatedSection from "../../components/AnimatedSection";
 import Link from "next/link";
@@ -11,6 +9,10 @@ import {
   IoMdMail,
   IoLogoGithub   
  } from "react-icons/io";
+
+export const metadata = {
+  title: 'About'
+}
 
 const About = () => {
     return (

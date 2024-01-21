@@ -3,6 +3,7 @@
 import Image from "next/image";
 import AnimatedSection from "../../components/AnimatedSection";
 import Link from "next/link";
+import AnimatedPage from '../../components/AnimatedPage';
 import { 
   IoIosArrowForward,
   IoLogoInstagram, 
@@ -13,12 +14,11 @@ import {
 
 const About = () => {
     return (
-      <article>
+      <AnimatedPage>
         <div className="rounded-lg bg-[#F5F0E8] p-3 text-center mb-6 mx-6 
           md:mx-0 dark:bg-[#313134] dark:text-[#E6E6E6]">
           Hello, I&apos;m a Computer Science student based in Bulgaria!
         </div>
-
         <div className="flex flex-col md:flex-row items-center gap-2 md:gap-0 dark:text-[#EEEEEE]">
           <div className="flex-grow">
             <h2 className="text-[1.875rem] font-bold font-Rounded1c">
@@ -147,7 +147,7 @@ const About = () => {
             </ul>
           </AnimatedSection>
         </div>
-      </article>
+      </AnimatedPage>
     )
   }
   

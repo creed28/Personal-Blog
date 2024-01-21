@@ -1,10 +1,12 @@
 'use client'
 
+import AnimatedPage from "../components/AnimatedPage";
+
 const Home = () => {
     return (
-      <section>
+      <AnimatedPage>
         Home
-      </section>
+      </AnimatedPage>
     )
   }
   

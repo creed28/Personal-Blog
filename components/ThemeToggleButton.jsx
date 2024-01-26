@@ -44,7 +44,7 @@ const ThemeToggleButton = () => {
         </button>
       </motion.div>
     </AnimatePresence>
-  );
-};
+  )
+}
 
 export default ThemeToggleButton

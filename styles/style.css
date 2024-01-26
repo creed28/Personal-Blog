@@ -11,9 +11,19 @@
 }
 
 @layer components {
+    .navbar{
+        @apply bg-[#F4EDE4] w-full z-[2] max-h-[56px] 
+        items-center flex justify-center fixed dark:bg-[#202023] 
+        dark:bg-opacity-40 bg-opacity-40 backdrop-filter backdrop-blur-md;
+    }
+
+    .footer{
+        @apply text-center opacity-40 text-sm py-8 dark:text-[#d8d8d9];
+    }
+
     .logoBox{
         @apply font-bold text-[18px] inline-flex gap-x-1 items-center 
-            h-[56px] leading-5 p-3;
+        h-[56px] leading-5 p-3;
     }
 
     .linkItem{

@@ -2,13 +2,8 @@ import Image from "next/image";
 import AnimatedSection from "../../components/AnimatedSection";
 import Link from "next/link";
 import AnimatedPage from '../../components/AnimatedPage';
-import { 
-  IoIosArrowForward,
-  IoLogoInstagram, 
-  IoLogoFacebook, 
-  IoMdMail,
-  IoLogoGithub   
- } from "react-icons/io";
+import { socialLinks } from "../../components/LinkList";
+import { IoIosArrowForward } from "react-icons/io";
 
 export const metadata = {
   title: 'About'
@@ -34,11 +29,11 @@ const About = () => {
             <Image
               src='/assets/images/hristo.png'
               alt="Profile Image" 
-              width={96}
-              height={100}
-              loading="eager"
-              className="border-[#fff] border-2 border-solid max-w-[100px] 
-                inline-block rounded-full"
+              width={105}
+              height={105}
+              loading="lazy"
+              className="border-[#fff] border-2 border-solid max-w-[105px] 
+                inline-block rounded-full mt-1"
             />
           </div>
         </div>
@@ -70,7 +65,7 @@ const About = () => {
             </section>
             <section className="bioHeading">
               <span className="bioParagraph">2021</span>
-              Completed my high school education at &quot;St. Knyaz Boris I &quot; 
+              Completed my high school education at &quot;St. Knyaz Boris I&quot; 
               in Asenovgrad and commenced my university studies at 
               &quot;Paisii Hilendarski&quot; in Plovdiv, furthering 
               my pursuit of software development.
@@ -98,54 +93,20 @@ const About = () => {
               On the web
             </h3>
             <ul>
-              <li>
-                <Link 
-                  className="inline-block"
-                  href={'https://github.com/creed28'} 
-                  target="_blank"
-                  title="GitHub">
-                  <button className="socialLink">
-                    <IoLogoGithub size={20} />
-                    @creed28
-                  </button>
-                </Link>
-              </li>
-              <li> 
-                <Link 
-                  className="inline-block" 
-                  href={'mailto: hristozagorliev283@gmail.com'}
-                  target="_blank"
-                  title="Gmail">
-                  <button className="socialLink">
-                    <IoMdMail size={20} />
-                    @hristozagorliev283
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  className="inline-block" 
-                  href={'https://www.facebook.com/hristo.zagorliev/'} 
-                  target="_blank"
-                  title="Facebook">
-                  <button className="socialLink">
-                    <IoLogoFacebook size={20} />
-                    @hristozagorliev
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  className="inline-block" 
-                  href={'https://www.instagram.com/hristo_z28/'} 
-                  target="_blank"
-                  title="Instagram">
-                  <button className="socialLink">
-                    <IoLogoInstagram size={20} />
-                    @hristo_z28
-                  </button>
-                </Link>
-              </li>
+              {socialLinks.map((link, index) => (
+                <li key={index}>
+                  <Link 
+                    className="inline-block" 
+                    href={link.href} 
+                    target="_blank" 
+                    title={link.title}>
+                      <button className="socialLink">
+                        {link.icon}
+                        {link.text}
+                      </button>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </AnimatedSection>
         </div>

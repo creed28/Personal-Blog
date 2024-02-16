@@ -44,7 +44,7 @@
     .dropdownLink{
         @apply hover:underline underline-offset-[3px] hover:bg-[#EDF2F7] 
         pl-4 pb-3 pt-1 mb-1 dark:hover:bg-[#394353] dark:text-[#EFF0F2]
-      dark:border-[#525255];
+       dark:border-[#525255];
     }
 
     .articleHeading{

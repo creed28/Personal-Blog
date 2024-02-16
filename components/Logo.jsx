@@ -3,7 +3,6 @@
 import Coffee from '../public/assets/icons/coffee';
 
 const Logo = () => {
-
   return (
     <h1 className='logoBox tracking-tighter'>
       <Coffee />

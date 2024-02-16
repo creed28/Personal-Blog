@@ -15,7 +15,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/assets/favicon.webp" sizes="any" />
+        <link rel="icon" href="/favicon.webp" sizes="any" />
       </head>
       <body className='bg-[#F0E7DB] dark:bg-[#202023]'>
         <Providers>

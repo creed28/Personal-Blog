@@ -7,9 +7,10 @@ import MainMenu from './MainMenu';
 import DropdownMenu from './DropdownMenu';
 
 const Navbar = () => {
+
   return (
     <nav className='navbar' id='main-nav'>
-      <div className='flex gap-x-80 md:gap-x-32'>
+      <div className='flex gap-x-64 md:gap-x-32'>
         <div className='flex p-2 max-w-screen-md mx-auto flex-wrap items-center 
           gap-x-5 justify-between'>
           <Link href='/' className='flex items-center shrink-0'>

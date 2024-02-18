@@ -8,13 +8,7 @@ const ThemeToggleButton = () => {
   const { setTheme, resolvedTheme } = useTheme();
 
   const toggleTheme = () => {
-    if (resolvedTheme === 'dark') {
-     setTheme('light');
-    }
-
-    if (resolvedTheme === 'light') {
-     setTheme('dark');
-    }
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
   }
 
   return (

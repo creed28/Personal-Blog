@@ -2,8 +2,8 @@ import Image from "next/image";
 import AnimatedSection from "../../components/AnimatedSection";
 import Link from "next/link";
 import AnimatedPage from '../../components/AnimatedPage';
-import { socialLinks } from "../../components/LinkList";
 import { IoIosArrowForward } from "react-icons/io";
+import SocialsSection from "../../components/SocialsSection";
 
 export const metadata = {
   title: 'About'
@@ -78,37 +78,18 @@ const About = () => {
             </section>
             <div className="flex justify-center">
               <Link href={'/'}>
-                <button className="flex bg-[#319795] hover:bg-[#2C7A7B] 
-                  items-center p-2 px-3 font-semibold rounded-md gap-2 my-4 
-                  text-center text-white dark:bg-[#81e6d9] 
-                  dark:hover:bg-[#4FD1C5] dark:text-[#244148]">
+                <button className="btn">
                   Read more
                   <IoIosArrowForward className="mt-1" />
                 </button>
               </Link>
             </div>
           </AnimatedSection>
-          <AnimatedSection delay={0.3}>
-            <h3 className="articleHeading">
-              On the web
-            </h3>
-            <ul>
-              {socialLinks.map((link, index) => (
-                <li key={index}>
-                  <Link 
-                    className="inline-block" 
-                    href={link.href} 
-                    target="_blank" 
-                    title={link.title}>
-                      <button className="socialLink">
-                        {link.icon}
-                        {link.text}
-                      </button>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </AnimatedSection>
+          <SocialsSection 
+            delay={0.3}
+            headingStyle={'articleHeading'}
+            linkStyle={'socialLink'}
+          />
         </div>
       </AnimatedPage>
     )

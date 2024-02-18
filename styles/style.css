@@ -64,4 +64,23 @@
         @apply text-[#2C7A7B] flex gap-x-1 items-center font-bold hover:bg-[#E6FFFA] 
         p-2 px-3 rounded-md dark:text-[#7CDBCF] dark:hover:bg-[#2C3839];
     }
+
+    .formInput{
+        @apply h-12 rounded-lg bg-[#F5F0E8] outline-[#525252] w-full p-4 
+        dark:bg-[#313134] dark:text-[#E6E6E6] dark:outline-[#EEEEEE] 
+        placeholder-[#7b7b7b] md:w-[50%];
+    }
+
+    .formTextArea{
+        @apply h-44 my-3 rounded-lg bg-[#F5F0E8] outline-[#525252] p-4 
+        resize-none dark:bg-[#313134] dark:text-[#E6E6E6] dark:outline-[#EEEEEE]
+        placeholder-[#7b7b7b];
+    }
+
+    .btn{
+        @apply flex bg-[#319795] hover:bg-[#2C7A7B] items-center 
+        p-2 px-3 font-semibold rounded-md gap-2 my-4 text-center 
+        text-white dark:bg-[#81e6d9] dark:hover:bg-[#4FD1C5] 
+        dark:text-[#244148];
+    }
 }

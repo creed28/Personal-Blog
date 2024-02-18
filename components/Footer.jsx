@@ -5,7 +5,7 @@ const Footer = () => {
     <footer 
       className="footer"
       id="main-footer">
-        &copy; {new Date().getFullYear()} Hristo Zagorliev. 
+        &copy; {new Date().getFullYear()} Created by Hristo Zagorliev. 
         All Rights Reserved.
     </footer>
   )

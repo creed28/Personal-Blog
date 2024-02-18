@@ -2,11 +2,9 @@
 
 import { motion } from 'framer-motion';
 
-const StyledDiv = motion.div;
-
 const AnimatedSection = ({ children, delay = 0 }) => {
   return (
-    <StyledDiv
+    <motion.section
       style={{ transitionProperty: 'transform, opacity' }}
       initial={{ translateY: 10, opacity: 0 }}
       animate={{ translateY: 0, opacity: 1 }}
@@ -14,7 +12,7 @@ const AnimatedSection = ({ children, delay = 0 }) => {
       mb={6}
     > 
       {children} 
-    </StyledDiv>
+    </motion.section>
   )
 }
 

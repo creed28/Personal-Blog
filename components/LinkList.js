@@ -6,10 +6,10 @@ import {
 import { FaDiscord } from 'react-icons/fa';
 
 export const navLinks = [
-    {href: '/posts', content: 'Posts'},
-    {href: '/about', content: 'About'},
-    {href: '/contact', content: 'Contact Me'},
-    {href: 'https://github.com/creed28/Personal-Blog', content: 'View Source', target: '_blank'},
+    { href: '/posts', content: 'Posts' },
+    { href: '/about', content: 'About' },
+    { href: '/contact', content: 'Contact Me' },
+    { href: '/dashboard', content: 'Dashboard' },
 ];
 
 export const socialLinks = [

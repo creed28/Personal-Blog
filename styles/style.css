@@ -38,7 +38,7 @@
 
     .dropdown{
         @apply absolute top-12 right-1 bg-white border rounded-md 
-        flex flex-col w-[200px] dark:bg-[#2D3748];
+        flex flex-col w-[200px] dark:bg-[#2D3748] transition-all duration-300;
     }
 
     .dropdownLink{

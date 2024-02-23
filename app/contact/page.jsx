@@ -34,6 +34,7 @@ const Contact = () => {
                   name="email" 
                   placeholder="Email"
                   className="formInput" 
+                  autoFocus
                   required 
                 />
                 <input 
@@ -51,9 +52,9 @@ const Contact = () => {
                 required
               />
               <button 
-                type="submit"
-                className="btn w-[6rem] justify-center outline-none px-0">
-                    Send
+                className='btn w-[6rem] justify-center outline-none px-0' 
+                type="submit">
+                  Send
               </button>
               <input type="hidden" name="_next" value='http://localhost:3000/contact' />
               <input type="hidden" name="_captcha" value="false" />

@@ -50,6 +50,14 @@ const About = () => {
               of like-minded individuals. Join me on this journey by creating an account, 
               save your favorite articles, and engage in discussions with fellow readers.
             </p>
+            <div className="flex justify-center">
+              <Link href={'https://github.com/creed28/Personal-Blog'} target="_blank">
+                <button className='btn'>
+                  View Source
+                  <IoIosArrowForward className="mt-1" />
+                </button>
+              </Link>
+            </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <h3 className="articleHeading">

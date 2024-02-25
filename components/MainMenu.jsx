@@ -1,5 +1,3 @@
-'use client' 
-
 import LinkItem from "./LinkItem";
 import { usePathname } from 'next/navigation';
 import { navLinks } from "./LinkList";

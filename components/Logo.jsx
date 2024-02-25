@@ -1,5 +1,3 @@
-'use client'
-
 import Coffee from '../public/assets/icons/coffee';
 
 const Logo = () => {

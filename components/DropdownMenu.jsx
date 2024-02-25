@@ -42,7 +42,9 @@ const DropdownMenu = () => {
               <Link 
                 key={index}
                 href={link.href}
-                className={`dropdownLink ${index !== navLinks.length - 1 ? 'mt-2' : 'mb-2'}`}
+                className={`dropdownLink 
+                  ${index === 0 ? 'mt-2' : ''} 
+                  ${index === navLinks.length - 1 ? 'mb-2' : ''}`}
               >
                   {link.content}
               </Link>

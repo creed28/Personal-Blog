@@ -87,7 +87,7 @@ const About = () => {
             <div className="flex justify-center">
               <Link href={'/'}>
                 <button className="btn">
-                  Read more
+                  Read More
                   <IoIosArrowForward className="mt-1" />
                 </button>
               </Link>

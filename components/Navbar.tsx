@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (  
     <nav className='navbar' id='main-nav'>
-      <div className='flex gap-x-64 md:gap-x-32'>
+      <div className='flex gap-x-64 md:gap-x-48'>
         <div className='flex p-2 max-w-screen-md mx-auto flex-wrap items-center 
           gap-x-5 justify-between'>
           <Link href='/' className='flex items-center shrink-0'>
@@ -28,7 +28,7 @@ const Navbar = () => {
           </Link>
           {windowWidth > 768 && <MainMenu />}
         </div>
-        <div className='flex gap-x-2 mr-5 md:m-0'>
+        <div className='flex gap-x-2 mr-5 md:mr-10'>
           <div className='flex items-center shrink-0'>
             <ThemeToggleButton />
           </div>

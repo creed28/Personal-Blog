@@ -74,16 +74,18 @@ const About = () => {
             </section>
             <section className="bioHeading">
               <span className="bioParagraph">2021</span>
-              Completed my high school education at &quot;St. Knyaz Boris I&quot; 
+              Completed my high school education at 
+              <span className="text-[#5580d6] dark:text-[#D657A5]"> St. Knyaz Boris I </span>
               in Asenovgrad and commenced my university studies at 
-              &quot;Paisii Hilendarski&quot; in Plovdiv, furthering 
+              <span className="text-[#5580d6] dark:text-[#D657A5]"> Paisii Hilendarski</span> in Plovdiv, furthering 
               my pursuit of software development.
             </section>
             <section className="bioHeading">
               <span className="bioParagraph">2023</span>
               Successfully concluded my first internship as a backend developer  
-              at Dreamix. Shortly after that, I embarked on a second internship as a
-              full-stack intern at Re4Life.
+              at <span className="text-[#5580d6] dark:text-[#D657A5]">Dreamix</span>. 
+              Shortly after that, I embarked on a second internship as a
+              full-stack intern at <span className="text-[#5580d6] dark:text-[#D657A5]">Re4Life</span>.
             </section>
             <div className="flex justify-center">
               <Link href={'/'}>

@@ -8,14 +8,25 @@ import DropdownMenu from './DropdownMenu';
 import MainMenu from './MainMenu';
 
 const Navbar = () => {
-  const[windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+      const newWidth = window.innerWidth;
 
-    window.addEventListener('resize', handleResize)
+      setWindowWidth(prevWidth => {
+        if (prevWidth !== newWidth) {
+          return newWidth;
+        }
+        return prevWidth;
+      })
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (  

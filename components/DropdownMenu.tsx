@@ -22,8 +22,16 @@ const DropdownMenu = () => {
       }
     };
 
-    window.addEventListener('click', handleClickOutside);
-  }, []);
+    if (isDropdownOpen) {
+      window.addEventListener('click', handleClickOutside);
+    } else {
+      window.removeEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      window.removeEventListener('click', handleClickOutside);
+    };
+  }, [isDropdownOpen]);
 
   return (
     <>

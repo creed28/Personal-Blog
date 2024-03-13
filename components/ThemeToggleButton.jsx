@@ -3,17 +3,17 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
 const ThemeToggleButton = () => {
-  const { setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
-  const toggleTheme = () => {
-    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
+  const handleThemeToggle = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   }
 
   return (
     <AnimatePresence mode='wait' initial={false}>
       <motion.div
-        style={{ display: 'inline-block' }}
-        key={resolvedTheme}
+        className='inline-block'
+        key={theme}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 20, opacity: 0 }}
@@ -21,14 +21,14 @@ const ThemeToggleButton = () => {
       >
         <button
           className={`flex items-center ${
-            resolvedTheme === 'dark'
+            theme === 'dark'
               ? 'bg-[#fbd38d] hover:bg-[#F6AD55]'
               : 'bg-[#805ad5] hover:bg-[#6B46C1]'
           } p-[10px] rounded-[0.375rem]`}
-          onClick={toggleTheme}
+          onClick={handleThemeToggle}
         >
           <Image
-            src={`/assets/images/${resolvedTheme === 'dark' ? 'sun' : 'moon'}-icon.png`}
+            src={`/assets/images/${theme === 'dark' ? 'sun' : 'moon'}-icon.png`}
             alt="Toggle theme"
             width={20}
             height={20}

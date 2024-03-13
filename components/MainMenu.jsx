@@ -1,6 +1,6 @@
 import LinkItem from "./LinkItem";
 import { usePathname } from 'next/navigation';
-import { navLinks } from "./LinkList";
+import { navLinks } from "../constants/links";
 
 const MainMenu = () => {
   const pathname = usePathname();

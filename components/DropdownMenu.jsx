@@ -3,13 +3,13 @@
 import Link from 'next/link';
 import { FaBars } from "react-icons/fa";
 import { useEffect, useRef, useState } from 'react';
-import { navLinks } from './LinkList';
+import { navLinks } from '../constants/links';
 
 const DropdownMenu = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleDropdownToggle = () => {
-    setDropdownOpen(!isDropdownOpen);
+    setIsDropdownOpen(!isDropdownOpen);
   }
 
   const dropdownRef = useRef(null);
@@ -17,7 +17,7 @@ const DropdownMenu = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setDropdownOpen(false);
+        setIsDropdownOpen(false);
       }
     };
 

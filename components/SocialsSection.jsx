@@ -1,6 +1,6 @@
 import Link from "next/link";
 import AnimatedSection from "./AnimatedSection";
-import { socialLinks } from "./LinkList";
+import { socialLinks } from "../constants/links";
 
 const SocialsSection = ({ delay, wrapperStyle='', headingStyle, listStyle='', linkStyle }) => {
   return (

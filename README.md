@@ -1,4 +1,3 @@
-
 ## Getting Started
 
 First, install all the packages:

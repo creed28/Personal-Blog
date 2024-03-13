@@ -8,7 +8,7 @@ import DropdownMenu from './DropdownMenu';
 import MainMenu from './MainMenu';
 
 const Navbar = () => {
-  const[windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const[windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {

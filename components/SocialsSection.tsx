@@ -2,7 +2,22 @@ import Link from "next/link";
 import AnimatedSection from "./AnimatedSection";
 import { socialLinks } from "../constants/links";
 
-const SocialsSection = ({ delay, wrapperStyle='', headingStyle, listStyle='', linkStyle }) => {
+type SocialLink = {
+  href: string;
+  title: string;
+  icon: React.ReactNode;
+  text: string;
+}
+
+type SocialsSectionProps = {
+  delay?: number;
+  wrapperStyle?: string;
+  headingStyle?: string;
+  listStyle?: string;
+  linkStyle?: string;
+}
+
+const SocialsSection = ({ delay, wrapperStyle = '', headingStyle, listStyle = '', linkStyle }: SocialsSectionProps) => {
   return (
     <AnimatedSection delay={delay}>
       <div className={wrapperStyle}>
@@ -11,7 +26,7 @@ const SocialsSection = ({ delay, wrapperStyle='', headingStyle, listStyle='', li
         </h3>
       </div>
       <ul className={listStyle}>
-        {socialLinks.map((link, index) => (
+        {socialLinks.map((link: SocialLink, index: number) => (
           <li key={index}>
             <Link 
               className="inline-block" 

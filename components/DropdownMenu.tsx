@@ -4,19 +4,20 @@ import Link from 'next/link';
 import { FaBars } from "react-icons/fa";
 import { useEffect, useRef, useState } from 'react';
 import { navLinks } from '../constants/links';
+import { NavLink } from '../types/navLink';
 
 const DropdownMenu = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
 
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   }
 
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsDropdownOpen(false);
       }
     };
@@ -38,7 +39,7 @@ const DropdownMenu = () => {
         'opacity-0 scale-95 hidden'}`}>
         {isDropdownOpen && (
           <>
-            {navLinks.map((link, index) => (
+            {navLinks.map((link: NavLink, index: number) => (
               <Link 
                 key={index}
                 href={link.href}

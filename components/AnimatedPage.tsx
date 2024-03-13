@@ -8,7 +8,9 @@ const variants = {
     exit: { opacity: 0, x: 0, y: 20}
 }
 
-const AnimatedPage = ({ children }) => {
+const AnimatedPage = ({ children }: {
+  children: React.ReactNode
+}) => {
   return (
     <motion.article 
       className="relative" 

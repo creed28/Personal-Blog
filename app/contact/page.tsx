@@ -1,9 +1,10 @@
+import { Metadata } from "next";
 import AnimatedSection from "../../components/AnimatedSection";
 import AnimatedPage from "../../components/AnimatedPage";
 import Link from "next/link";
 import SocialsSection from "../../components/SocialsSection";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Contact'
 }
 

@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "../../components/AnimatedSection";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import AnimatedPage from '../../components/AnimatedPage';
 import { IoIosArrowForward } from "react-icons/io";
 import SocialsSection from "../../components/SocialsSection";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'About'
 }
 

@@ -1,5 +1,5 @@
 import '../styles/style.css';
-import Providers from './providers';
+import Providers from '../providers/ThemeProvider';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 

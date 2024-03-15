@@ -9,15 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-[#319795] hover:bg-[#2C7A7B] p-2 gap-2 my-4 text-center text-white dark:bg-[#81e6d9] dark:hover:bg-[#4FD1C5] dark:text-[#244148]",
+        default: 
+          "bg-[#319795] hover:bg-[#2C7A7B] p-2 gap-2 my-4 text-center text-white dark:bg-[#81e6d9] dark:hover:bg-[#4FD1C5] dark:text-[#244148]",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        dark:
-        "bg-[#fbd38d] hover:bg-[#F6AD55]",
-        light:
-        "bg-[#805ad5] hover:bg-[#6B46C1]",
+        toggle:
+          "bg-[#805ad5] hover:bg-[#6B46C1] dark:bg-[#fbd38d] dark:hover:bg-[#F6AD55]",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "p-3 mr-3 border-2 hover:bg-[#EDF2F7] dark:text-[#C1C1C1] dark:hover:bg-[#323235] dark:border-[#525255]",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
@@ -25,8 +24,8 @@ const buttonVariants = cva(
       },
       size: {
         default: "px-3",
-        xsm: "p-[10px] rounded-[0.375rem]",
-        sm: "w-[6rem] justify-center outline-none px-0",
+        sm: "p-[10px] rounded-[0.375rem]",
+        md: "w-[6rem] outline-none px-0",
         lg: "h-11  px-8",
         icon: "h-10 w-10",
       },

@@ -53,10 +53,8 @@ const Contact = () => {
                 className="formTextArea"
                 required
               />
-              <Button
-                size="sm"
-                type="submit">
-                  Send
+              <Button type="submit" size="md">
+                Send
               </Button>
               <input type="hidden" name="_next" value='http://localhost:3000/contact' />
               <input type="hidden" name="_captcha" value="false" />

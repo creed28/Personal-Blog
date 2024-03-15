@@ -42,11 +42,7 @@ const Navbar = () => {
           <div className='flex items-center shrink-0'>
             <ThemeToggleButton />
           </div>
-          {windowWidth <= 768 && (
-            <div className="relative mt-4">
-              <DropdownMenu />
-            </div>
-          )}
+          {windowWidth <= 768 && <DropdownMenu />}
         </div>
       </div>
     </nav>

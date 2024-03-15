@@ -21,8 +21,8 @@ const ThemeToggleButton = () => {
         transition={{ duration: 0.2 }}
       >
         <Button
-          variant={theme === 'dark' ? 'dark' : 'light'}
-          size='xsm'
+          variant='toggle'
+          size='sm'
           onClick={handleThemeToggle}
         >
           <Image

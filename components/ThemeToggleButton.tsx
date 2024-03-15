@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
+import { Button } from './Button';
 
 const ThemeToggleButton = () => {
   const { theme, setTheme } = useTheme();
@@ -19,12 +20,9 @@ const ThemeToggleButton = () => {
         exit={{ y: 20, opacity: 0 }}
         transition={{ duration: 0.2 }}
       >
-        <button
-          className={`flex items-center ${
-            theme === 'dark'
-              ? 'bg-[#fbd38d] hover:bg-[#F6AD55]'
-              : 'bg-[#805ad5] hover:bg-[#6B46C1]'
-          } p-[10px] rounded-[0.375rem]`}
+        <Button
+          variant={theme === 'dark' ? 'dark' : 'light'}
+          size='xsm'
           onClick={handleThemeToggle}
         >
           <Image
@@ -33,7 +31,7 @@ const ThemeToggleButton = () => {
             width={20}
             height={20}
           />
-        </button>
+        </Button>
       </motion.div>
     </AnimatePresence>
   )

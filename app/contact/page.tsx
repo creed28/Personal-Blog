@@ -3,6 +3,7 @@ import AnimatedSection from "../../components/AnimatedSection";
 import AnimatedPage from "../../components/AnimatedPage";
 import Link from "next/link";
 import SocialsSection from "../../components/SocialsSection";
+import { Button } from "../../components/Button";
 
 export const metadata: Metadata = {
   title: 'Contact'
@@ -52,11 +53,11 @@ const Contact = () => {
                 className="formTextArea"
                 required
               />
-              <button 
-                className='btn w-[6rem] justify-center outline-none px-0' 
+              <Button
+                size="sm"
                 type="submit">
                   Send
-              </button>
+              </Button>
               <input type="hidden" name="_next" value='http://localhost:3000/contact' />
               <input type="hidden" name="_captcha" value="false" />
           </form>

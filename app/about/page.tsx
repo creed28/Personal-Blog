@@ -5,6 +5,7 @@ import Link from "next/link";
 import AnimatedPage from '../../components/AnimatedPage';
 import { IoIosArrowForward } from "react-icons/io";
 import SocialsSection from "../../components/SocialsSection";
+import { Button } from "../../components/Button";
 
 export const metadata: Metadata = {
   title: 'About'
@@ -53,10 +54,10 @@ const About = () => {
           </p>
           <div className="flex justify-center">
             <Link href={'https://github.com/creed28/Personal-Blog'} target="_blank">
-              <button className='btn'>
+              <Button>
                 View Source
                 <IoIosArrowForward className="mt-1" />
-              </button>
+              </Button>
             </Link>
           </div>
         </AnimatedSection>
@@ -89,10 +90,10 @@ const About = () => {
           </section>
           <div className="flex justify-center">
             <Link href={'/'}>
-              <button className="btn">
+              <Button>
                 Read More
                 <IoIosArrowForward className="mt-1" />
-              </button>
+              </Button>
             </Link>
           </div>
         </AnimatedSection>

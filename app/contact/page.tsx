@@ -20,7 +20,7 @@ const Contact = () => {
         Please get in touch with me directly at&nbsp;
         <Link 
           href="mailto:hristozagorliev283@gmail.com" target="_blank" 
-          className="underline underline-offset-2">
+          className="bioHighlight">
             hristozagorliev283@gmail.com
         </Link>
         &nbsp;or through this form.

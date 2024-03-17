@@ -16,18 +16,23 @@ const buttonVariants = cva(
         toggle:
           "bg-[#805ad5] hover:bg-[#6B46C1] dark:bg-[#fbd38d] dark:hover:bg-[#F6AD55]",
         outline:
-          "p-3 mr-3 border-2 hover:bg-[#EDF2F7] dark:text-[#C1C1C1] dark:hover:bg-[#323235] dark:border-[#525255]",
+          "p-3 mr-3 border-2 border-[#E2E8F0] hover:bg-[#EDF2F7] dark:text-[#C1C1C1] dark:hover:bg-[#323235] dark:border-[#525255]",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+        link: "text-primary hover:underline underline-offset-4",
+        auth:
+          "py-2 border border-black hover:bg-[#F5F0E8] dark:border-[#525252] rounded-3xl dark:text-[#f8f7f7] dark:hover:bg-[#323235]",
       },
       size: {
         default: "px-3",
         sm: "p-[10px] rounded-[0.375rem]",
         md: "w-[6rem] outline-none px-0",
         lg: "h-11  px-8",
+        wide: 'px-5',
         icon: "h-10 w-10",
+        link: "py-2"
+
       },
     },
     defaultVariants: {

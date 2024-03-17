@@ -2,7 +2,7 @@ import React from 'react';
 import LinkItem from './LinkItem';
 import { usePathname } from 'next/navigation';
 import { navLinks } from '../constants/links';
-import { NavLink } from '../types/navLink';
+import { NavLink } from '../types/NavLink';
 
 const MainMenu = () => {
   const pathname = usePathname();

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FaBars } from "react-icons/fa";
 import { useEffect, useRef, useState } from 'react';
 import { navLinks } from '../constants/links';
-import { NavLink } from '../types/navLink';
+import { NavLink } from '../types/NavLink';
 import { Button } from './Button';
 
 const DropdownMenu = () => {

@@ -1,6 +1,6 @@
 import AnimatedPage from "../components/AnimatedPage";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <AnimatedPage>
       Home
@@ -8,5 +8,5 @@ const Home = () => {
   )
 }
   
-export default Home
+export default HomePage
   

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'About'
 }
 
-const About = () => {
+const AboutPage = () => {
   return (
     <AnimatedPage>
       <div className="rounded-lg bg-[#F5F0E8] p-3 text-center mb-6 mx-6 
@@ -107,5 +107,5 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutPage
   

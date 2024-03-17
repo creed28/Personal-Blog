@@ -4,12 +4,14 @@ import AnimatedPage from "../../components/AnimatedPage";
 import Link from "next/link";
 import SocialsSection from "../../components/SocialsSection";
 import { Button } from "../../components/Button";
+import { Input } from "../../components/Input";
+import { Textarea } from "../../components/TextArea";
 
 export const metadata: Metadata = {
   title: 'Contact'
 }
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <AnimatedPage>
       <h2 className="text-[1.875rem] font-bold font-Rounded1c text-center 
@@ -20,7 +22,7 @@ const Contact = () => {
         Please get in touch with me directly at&nbsp;
         <Link 
           href="mailto:hristozagorliev283@gmail.com" target="_blank" 
-          className="bioHighlight">
+          className="underline underline-offset-4">
             hristozagorliev283@gmail.com
         </Link>
         &nbsp;or through this form.
@@ -31,7 +33,7 @@ const Contact = () => {
             method="POST"
             className="mt-6 mb-2 flex flex-col mx-6 md:mx-0">
               <div className="w-full flex md:flex-row justify-between gap-2 flex-col">
-                <input 
+                <Input
                   type="email" 
                   name="email" 
                   placeholder="Email"
@@ -39,7 +41,7 @@ const Contact = () => {
                   autoFocus
                   required 
                 />
-                <input 
+                <Input 
                   type="text" 
                   name="_subject" 
                   placeholder='Subject'
@@ -47,7 +49,7 @@ const Contact = () => {
                   required 
                 />
               </div>
-              <textarea
+              <Textarea
                 name="message"
                 placeholder="Enter your message..."
                 className="formTextArea"
@@ -73,4 +75,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactPage

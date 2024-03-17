@@ -1,9 +1,9 @@
 'use client'
 
 import Link from 'next/link';
-import SadFace from '../public/assets/icons/404';
+import SadFace from '../public/assets/icons/error';
 
-const NotFound = () => {
+const ErrorPage = () => {
   return (
     <section className="container max-w-[518px] mx-auto">
       <div className='flex flex-col justify-center items-center'>
@@ -29,4 +29,4 @@ const NotFound = () => {
   )
 }
 
-export default NotFound
+export default ErrorPage

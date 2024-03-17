@@ -1,6 +1,6 @@
 import AnimatedPage from "../../../components/AnimatedPage";
 
-const SinglePost = () => {
+const SinglePostPage = () => {
   return (
     <AnimatedPage>
       Single Post
@@ -8,4 +8,4 @@ const SinglePost = () => {
   )
 }
 
-export default SinglePost
+export default SinglePostPage

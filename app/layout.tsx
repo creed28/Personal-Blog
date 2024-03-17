@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import '../styles/style.css';
-import ThemeProvider from '../providers/ThemeProvider';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ThemeProvider from "../providers/themeProvider";
 
 export const metadata: Metadata = {
   title: {

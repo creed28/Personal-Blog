@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-    reactStrictMode: true,
+
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {    
+        hostname: 'files.edgestore.dev',
+      }
+    ]
+  },
+  reactStrictMode: true,
 }
+
+module.exports = nextConfig

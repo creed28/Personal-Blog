@@ -35,7 +35,7 @@ const DropdownMenu = () => {
   }, [isDropdownOpen])
 
   return (
-    <div className="relative mt-4">
+    <div className="relative">
       <Button
         variant='outline'
         className={`${isDropdownOpen && 'bg-[#EDF2F7] dark:bg-[#323235]'}`}

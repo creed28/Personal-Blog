@@ -13,6 +13,7 @@ const LoginForm = () => {
           type="email"
           required
           autoFocus
+          autoComplete="off"
         />
         <Input
           placeholder="Password"

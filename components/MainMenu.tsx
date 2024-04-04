@@ -5,7 +5,7 @@ import { navLinks } from '../constants/links';
 import { NavLink } from '../types/NavLink';
 
 const MainMenu = () => {
-  const pathname = usePathname();
+  const pathname: string = usePathname();
 
   return (
     <ul className="items-center flex-grow gap-x-2 hidden w-full md:flex md:w-auto

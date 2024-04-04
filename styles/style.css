@@ -78,74 +78,90 @@ body,
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground box-border;;
+    @apply bg-background text-foreground box-border;
   }
 }
 
 @layer components {
   .navbar {
-      @apply bg-[#F4EDE4] w-full z-[2] max-h-[56px] 
-      items-center flex justify-center fixed dark:bg-[#202023] 
-      dark:bg-opacity-40 bg-opacity-40 backdrop-filter backdrop-blur-md;
+    @apply bg-[#F4EDE4] w-full z-[2] max-h-[56px] 
+    items-center flex justify-center fixed dark:bg-[#202023] 
+    dark:bg-opacity-40 bg-opacity-40 backdrop-filter backdrop-blur-md;
   }
 
   .footer {
-      @apply text-center text-[#9e9e9e] text-sm py-8;
+    @apply text-center text-[#9e9e9e] text-sm py-8;
   }
 
   .logoBox {
-      @apply font-bold text-[18px] inline-flex gap-x-1 items-center 
-      h-[56px] leading-5 p-3;
+    @apply font-bold text-[18px] inline-flex gap-x-1 items-center 
+    h-[56px] leading-5 p-3;
   }
 
   .linkItem {
-      @apply p-2 text-[#1A202C] hover:underline underline-offset-[3px] 
-      dark:text-[#EDEDED];
+    @apply p-2 text-[#1A202C] hover:underline underline-offset-[3px] 
+    dark:text-[#EDEDED];
   }
 
   .dropdown {
-      @apply absolute top-12 right-1 bg-white border rounded-md 
-      flex flex-col w-[200px] dark:bg-[#2D3748] transition-all duration-300;
+    @apply absolute top-12 right-1 bg-white border rounded-md 
+    flex flex-col w-[200px] dark:bg-[#2D3748] transition-all duration-300;
   }
 
   .dropdownLink {
-      @apply hover:underline underline-offset-[3px] hover:bg-[#EDF2F7] 
-      pl-4 pt-2 pb-3 dark:hover:bg-[#394353] dark:text-[#EFF0F2]
-     dark:border-[#525255];
+    @apply hover:underline underline-offset-[3px] hover:bg-[#EDF2F7] 
+    pl-4 pt-2 pb-3 dark:hover:bg-[#394353] dark:text-[#EFF0F2]
+    dark:border-[#525255];
   }
 
   .articleHeading {
-      @apply font-Rounded1c text-[1.17rem] mb-3 font-bold border-b-4
-      border-b-[#525252] inline-block;
+    @apply font-Rounded1c text-[1.17rem] mb-3 font-bold border-b-4
+    border-b-[#525252] inline-block;
   }
 
   .bioHeading {
-     @apply pl-[3.4em] indent-[-3.4em] py-1;
+    @apply pl-[3.4em] indent-[-3.4em] py-1;
   }
 
   .bioParagraph {
-      @apply font-bold mr-[1em];
+    @apply font-bold mr-[1em];
   }
 
   .bioHighlight {
-      @apply text-[#5580d6] dark:text-[#D657A5];
-  }
-
-  .socialLink {
-      @apply text-[#2C7A7B] flex gap-x-1 items-center font-bold hover:bg-[#E6FFFA] 
-      p-2 px-3 rounded-md dark:text-[#7CDBCF] dark:hover:bg-[#2C3839];
+    @apply text-[#5580d6] dark:text-[#D657A5];
   }
 
   .formInput {
-      @apply h-12 rounded-lg bg-[#F5F0E8] outline-[#525252] w-full p-4 
-      dark:bg-[#313134] dark:text-[#E6E6E6] dark:outline-[#EEEEEE] 
-      placeholder-[#7b7b7b] md:w-[50%];
+    @apply h-12 rounded-lg bg-[#F5F0E8] outline-[#525252] w-full p-4 
+    dark:bg-[#313134] dark:text-[#E6E6E6] dark:outline-[#EEEEEE] 
+    placeholder-[#7b7b7b] md:w-[50%];
   }
 
   .formTextArea {
-      @apply h-44 my-3 rounded-lg bg-[#F5F0E8] outline-[#525252] p-4 
-      resize-none dark:bg-[#313134] dark:text-[#E6E6E6] dark:outline-[#EEEEEE]
-      placeholder-[#7b7b7b];
+    @apply h-44 my-3 rounded-lg bg-[#F5F0E8] outline-[#525252] p-4 
+    resize-none dark:bg-[#313134] dark:text-[#E6E6E6] dark:outline-[#EEEEEE]
+    placeholder-[#7b7b7b];
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

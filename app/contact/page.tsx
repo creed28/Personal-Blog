@@ -5,7 +5,7 @@ import Link from "next/link";
 import SocialsSection from "../../components/SocialsSection";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
-import { Textarea } from "../../components/TextArea";
+import { Textarea } from "../../components/Textarea";
 
 export const metadata: Metadata = {
   title: 'Contact'
@@ -68,7 +68,7 @@ const ContactPage = () => {
           wrapperStyle={'md:flex md:justify-center'}
           headingStyle={'articleHeading md:text-[1.3rem]'}
           listStyle={'md:flex md:justify-center md:gap-x-10'}
-          linkStyle={'socialLink md:py-3 md:px-6 md:text-[1.1rem]'}
+          linkStyle={'md:py-3 md:px-6 md:text-[1.1rem]'}
         />
       </div>
     </AnimatedPage>

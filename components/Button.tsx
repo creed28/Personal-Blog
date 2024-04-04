@@ -23,6 +23,8 @@ const buttonVariants = cva(
         link: "text-primary hover:underline underline-offset-4",
         auth:
           "py-2 border border-black hover:bg-[#F5F0E8] dark:border-[#525252] rounded-3xl dark:text-[#f8f7f7] dark:hover:bg-[#323235]",
+        social:
+          "text-[#2C7A7B] gap-x-1 font-bold hover:bg-[#E6FFFA] p-2 dark:text-[#7CDBCF] dark:hover:bg-[#2C3839]"
       },
       size: {
         default: "px-3",
@@ -31,7 +33,7 @@ const buttonVariants = cva(
         lg: "h-11  px-8",
         wide: 'px-5',
         icon: "h-10 w-10",
-        link: "py-2"
+        link: "self-stretch"
 
       },
     },

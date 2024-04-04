@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SadFace from '../public/assets/icons/error';
+import { Button } from '@/components/Button';
 
 const NotFoundPage = () => {
   return (
@@ -16,11 +17,11 @@ const NotFoundPage = () => {
         </p>
       </div>
       <hr className="my-8 mx-4" />
-      <div className="my-6 text-center">
-        <Link 
-          href="/"
-          className="btn inline-block px-4 my-0">
-          Return to home
+      <div className="flex justify-center my-6">
+        <Link href={'/'}>
+          <Button>
+            Return to home
+          </Button>
         </Link>
       </div>
     </section>

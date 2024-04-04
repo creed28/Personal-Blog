@@ -33,7 +33,7 @@ const AuthDialog = ({ windowWidth }: AuthDialogProps) => {
   const handleBackButtonClick = () => {
     setIsLoginFormActive(!isLoginFormActive);
   }
-
+ 
   return (
     <Dialog>
       <DialogTrigger asChild>

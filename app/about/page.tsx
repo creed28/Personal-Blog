@@ -70,7 +70,7 @@ const AboutPage = () => {
             Born in Asenovgrad, Bulgaria.
           </section>
           <section className="bioHeading">
-            <span className="bioParagraph">2020</span>
+            <span className="bioParagraph">2019</span>
             Embarked on my journey into software development.
           </section>
           <section className="bioHeading">
@@ -100,7 +100,6 @@ const AboutPage = () => {
         <SocialsSection 
           delay={0.3}
           headingStyle={'articleHeading'}
-          linkStyle={'socialLink'}
         />
       </div>
     </AnimatedPage>

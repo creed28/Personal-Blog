@@ -1,6 +1,7 @@
 import Link from "next/link";
 import AnimatedSection from "./AnimatedSection";
 import { socialLinks } from "../constants/links";
+import { Button } from "./Button";
 
 type SocialLink = {
   href: string;
@@ -33,10 +34,10 @@ const SocialsSection = ({ delay, wrapperStyle = '', headingStyle, listStyle = ''
               href={link.href} 
               target="_blank" 
               title={link.title}>
-                <button className={linkStyle}>
+                <Button variant="social" className={linkStyle}>
                   {link.icon}
                   {link.text}
-                </button>
+                </Button>
             </Link>
           </li>
         ))}

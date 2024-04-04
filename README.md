@@ -6,7 +6,14 @@ First, install all the packages:
 npm install
 ``` 
 
-Then, run the development server:
+Then setup a .env.local file:
+
+```bash
+EDGE_STORE_ACCESS_KEY=
+EDGE_STORE_SECRET_KEY=
+```
+
+Finally, run the development server:
 
 ```bash
 npm run dev

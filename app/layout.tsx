@@ -3,6 +3,8 @@ import '../styles/style.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ThemeProvider from "../providers/themeProvider";
+import { DialogProvider } from "../providers/dialogProvider";
+import { EdgeStoreProvider } from "../lib/edgestore";
 
 export const metadata: Metadata = {
   title: {
@@ -24,13 +26,16 @@ const RootLayout = ({ children }: {
   return (
     <html lang="en">
       <body className='bg-[#F0E7DB] dark:bg-[#202023]'>
-        <ThemeProvider>
-          <Navbar />
-          <main className='max-w-screen-md mx-auto pt-24'>
-            {children}
-          </main>
-          <Footer />
-        </ThemeProvider>
+        <EdgeStoreProvider>
+          <ThemeProvider>
+            <DialogProvider />
+            <Navbar />
+            <main className='max-w-screen-md mx-auto pt-24'>
+              {children}
+            </main>
+            <Footer />
+          </ThemeProvider>
+        </EdgeStoreProvider>
       </body>
     </html>
   )

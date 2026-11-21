@@ -1,42 +1,69 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# --- Blog content (local only, never committed) ---
+# Posts (public and private) live only on this machine. See README "Private posts".
+/content/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
+# --- Dependencies ---
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# testing
-/coverage
+# --- Build output ---
+/dist/
+/dist-ssr/
+*.tsbuildinfo
+node_modules/.tmp/
+node_modules/.vite/
 
-# next.js
-/.next/
-/out/
+# --- Testing ---
+/coverage/
 
-# production
-/build
+# --- Vercel (project link, pulled env, prebuilt output) ---
+.vercel/
 
-# misc
-.DS_Store
-*.pem
+# --- Environment variables ---
+.env
+.env.*
+!.env.example
+*.local
 
-# debug
+# --- Logs ---
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# local env files
-.env*.local
+# --- Caches ---
+.eslintcache
+.prettiercache
+.cache/
 
-# vercel
-.vercel
+# --- Secrets / certificates ---
+*.pem
+*.key
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# --- Editors / IDEs ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# blog posts (local only, never committed)
-/content/
+# --- Claude Code (personal settings) ---
+.claude/settings.local.json
 
-# vite build output
-/dist/
+# --- OS files ---
+.DS_Store
+Thumbs.db
+Desktop.ini

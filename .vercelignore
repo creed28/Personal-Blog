@@ -1,0 +1,11 @@
+# `npm run deploy` uploads only .vercel/output (prebuilt), so this file is a
+# safety net: if anyone runs a plain `vercel deploy`, the markdown sources and
+# local-only files must never be uploaded.
+/content/
+.env
+.env.*
+*.local
+*.pem
+*.key
+.DS_Store
+.claude/

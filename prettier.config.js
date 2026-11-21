@@ -1,12 +1,12 @@
-const options = {
+/** @type {import('prettier').Config} */
+export default {
   arrowParens: 'avoid',
   singleQuote: true,
   bracketSpacing: true,
   endOfLine: 'lf',
   semi: false,
   tabWidth: 2,
-  trailingComma: 'none'
+  trailingComma: 'none',
+  plugins: ['prettier-plugin-tailwindcss'],
+  tailwindStylesheet: './src/styles/style.css'
 }
-  
-module.exports = options
-  

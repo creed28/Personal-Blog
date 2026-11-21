@@ -1,0 +1,1 @@
+import{t as e,u as t}from"./react-BW_QLWeZ.js";var n=t(),r=({children:t,delay:r})=>(0,n.jsx)(e.section,{initial:{y:10,opacity:0},animate:{y:0,opacity:1},transition:{duration:.8,delay:r},children:t});export{r as t};

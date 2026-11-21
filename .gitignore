@@ -37,3 +37,6 @@ next-env.d.ts
 
 # blog posts (local only, never committed)
 /content/
+
+# vite build output
+/dist/

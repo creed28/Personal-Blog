@@ -1,1 +1,0 @@
-import{t as e,u as t}from"./react-BW_QLWeZ.js";var n=t(),r={hidden:{opacity:0,x:0,y:20},enter:{opacity:1,x:0,y:0},exit:{opacity:0,x:0,y:20}},i=({children:t})=>(0,n.jsx)(e.article,{className:`relative`,initial:`hidden`,animate:`enter`,exit:`exit`,variants:r,transition:{duration:.4,ease:`easeInOut`,delay:.2},children:t});export{i as t};

@@ -1,1 +1,0 @@
-import{t as e}from"./AnimatedPage-DmrAmQ0x.js";import{u as t}from"./react-BW_QLWeZ.js";var n=t();function r(){return(0,n.jsx)(e,{children:`Home`})}export{r as component};
